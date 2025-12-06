@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="">
+
+</head>
+<style>
+    .arkaplan {
+        color: #2b6cb0;
+        background: #f7fafc;
+        font-family: Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        border: 2px solid black; /* a��k gri �izgi */
+    }
+
+
+    header h1 {
+        text-align: center;
+        font-size: 20px;
+        color: #1e3a8a;
+    }
+
+
+
+    /* Alt kutular� saran yap� */
+    .bottom-wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 1100px;
+    }
+
+        .bottom-wrapper h2 {
+            text-align: center;
+            font-size: 15px;
+            color: #1e3a8a;
+        }
+
+        .bottom-wrapper h5 {
+            text-decoration: underline;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+    /* Sol kutu */
+    .left-box {
+        max-width: 630px;
+        flex: 2; /* geni� */
+        height: auto;
+        height: auto;
+        background: #ffffff;
+        border: 2px solid #000000;
+    }
+
+
+    /* Sol kutu */
+    .left-box .alt-sol-box {
+        max-width: 320px;
+        flex: 2; /* geni� */
+        height: auto;
+        padding: 0 10px;
+        background: #ffffff;
+        border: 2px solid #000000;
+    }
+
+    /* Sa� kutu */
+    .left-box .alt-sag-box {
+        max-width: 370px;
+        flex: 1; /* dar */
+        height: auto;
+        background: #ffffff;
+        border: 2px solid #000000;
+        padding: 0 10px;
+    }
+
+
+    .form-satir {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+        .form-satir label {
+            width: 90px; /* ——— Etiketler için sabit genişlik */
+            display: inline-block;
+        }
+
+        .form-satir input {
+            width: 220px; /* ——— Tüm kutular aynı genişlik */
+            padding: 3px 0px;
+            border: 2px solid #444;
+            font-size: 15px;
+        }
+
+        .form-satir .txtareastyle {
+            font-size: 15px;
+            border: 2px solid #444;
+        }
+
+    /* burdan sonrkaki cssler ikinci kısım için **/
+    /* Sa� kutu */
+    .right-box {
+ 
+        max-width: 850px;
+        flex: 1; /* dar */
+       
+        background: #ffffff;
+        border: 2px solid #000000;
+    }
+
+    /* Sol kutu */
+        .right-box .alt-sol-box {
+          
+            max-width: 300px;
+            flex: 2; /* geni� */
+             
+            padding: 0 10px;
+            background: #00ff21;
+        }
+
+    /* Sa� kutu */
+        .right-box .alt-sag-box {
+            max-width: 530px;
+            flex: 1; /* dar */
+            
+            background: #ff6a00;
+            padding: 0;
+            margin: 0px
+        }
+   
+    /**sag kısmın sol sutunu*/
+    .foto-div {
+        display: flex;
+        justify-content: center;
+ 
+        margin: 20px 0px;
+    
+        font-weight: bold;
+    }
+    /* Ortadaki daire */
+    .foto-daire {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 2px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+        letter-spacing: 1px;
+    }
+    .iletisim-kutu {
+      padding-left:15px;
+        color: black;
+        font-family: Georgia, serif;
+    }
+
+        .iletisim-kutu h3 {
+      
+         
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            border-bottom: 2px solid black; /* başlık alt çizgi */
+            padding-bottom: 4px;
+        }
+
+        .iletisim-kutu ul {
+            margin: 10px 0 0 15px;
+            padding: 0;
+            list-style: disc; /* siyah noktalar */
+        }
+
+        .iletisim-kutu li {
+            margin-bottom: 10Px;
+        }
+    /**sag kısmın sağ sutunu*/
+    .adkutu {
+        background: #3a3a3a; /* koyu gri */
+        height: 210px;
+        display: flex;
+        justify-content: center; /* yatay ortalama */
+        flex-direction: column;
+        text-align: center;
+        color: #ffffff;
+        font-family: Georgia, serif;
+    }
+
+        .adkutu .isim {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .adkutu .unvan {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+            .adkutu  span { 
+                border-bottom: 2px solid #ffffff; /* alt çizgi */
+                padding-bottom: 3px;
+            }
+
+
+
+
+
+
+
+</style>
+
+<body class="arkaplan" style="background:#00ffff">
+
+    <div class="container" style="background:#f7fafc">
+        <div style=" border: 3px solid black;">
+            <header>
+                <h1>Cv Hazırlama Aracı </h1>
+            </header>
+            <BR />
+        </div>
+
+
+
+        <section>
+
+
+
+            <div class="bottom-wrapper">
+
+                <!-- SOL KUTU -->
+                <div class="left-box">
+                    <div class="bottom-wrapper">
+
+                        <!-- SOL k�s�m -->
+                        <div class="alt-sol-box" ">
+                            <h2>Metin içerikleri</h2>
+                            <hr />
+
+                            <h5>  İsim Kutusu</h5>
+
+                            <div class="form-satir">
+                                <label for="name">Ad-Soyad:</label>
+                                <input type="text" onkeyup="AdSoyad()" id="name"  >
+                            </div>
+ 
+
+                            <div class="form-satir">
+                                <label for="unvan">Ünvan:</label>
+                                <input type="text" onkeyup="Unvan()"  id="unvan">
+                            </div>
+                            
+                            <script>
+
+                                function AdSoyad() {
+                                    var metin = document.getElementById("name");
+                                    var harfSayisi = metin.value;
+
+                                    document.getElementById("KarakterAd").innerHTML = harfSayisi;
+                                }
+                                function Unvan() {
+
+                                    var metin1 = document.getElementById("unvan");
+                                    var harfSayisi1 = metin1.value;
+
+                                    document.getElementById("KarakterUnvn").innerHTML = harfSayisi1;
+                                }
+                                function Tel() {
+                                    var metin1 = document.getElementById("tel");
+                                    var harfSayisi1 = metin1.value;
+
+                                    document.getElementById("telefon").innerHTML = harfSayisi1;
+                                }
+
+                                function Email() {
+                                    var metin1 = document.getElementById("email");
+                                    var harfSayisi1 = metin1.value;
+
+                                    document.getElementById("Mail").innerHTML = harfSayisi1;
+                                }
+                                function Web() {
+                                    var metin1 = document.getElementById("web");
+                                    var harfSayisi1 = metin1.value;
+
+                                    document.getElementById("Web").innerHTML = harfSayisi1;
+                                }
+                                function Adres() {
+                                    var metin1 = document.getElementById("adress");
+                                    var harfSayisi1 = metin1.value;
+
+                                    document.getElementById("Adress").innerHTML = harfSayisi1;
+
+
+
+
+
+
+                                }
+                            </script>
+
+                            <h5>  İletişim Bilgileri</h5>
+
+                            <div class="form-satir">
+                                <label for="tel">Telefon:</label>
+                                <input type="tel" onkeyup="Tel()" id="tel"   />
+                            </div>
+
+                            <div class="form-satir">
+                                <label for="email">Email: </label>
+                                <input type="email" onkeyup="Email()" id="email"   />
+
+                            </div>
+                            <div class="form-satir">
+                                <label for="web">Web: </label>
+                                <input type="email" onkeyup="Web()" id="web"   />
+
+                            </div>
+                            <div class="form-satir">
+                                <label for="adress">Adress: </label>
+                                <textarea class="txtareastyle" onkeyup="Adres()" id="adress"   rows="4" cols="24"></textarea>
+
+                            </div>
+                            <BR />
+                            <h5> Eğitim  Bilgileri</h5>
+                            <div class="form-satir">
+                                <label for="EbAciklama">Açıklama: </label>
+                                <textarea class="txtareastyle" id="EbAciklama" name="EbAciklama" rows="4" cols="24"></textarea>
+
+                            </div>
+
+                            <div class="form-satir">
+                                <label for="okulsayisi">Okul Sayısı: </label>
+                                <select id="okulsayisi">
+                                    <option value="">Seçiniz</option>
+                                    <option value="Okul1">1</option>
+                                    <option value="Okul2">2</option>
+                                    <option value="Okul3">3</option>
+                                </select>
+                            </div>
+
+                            <!-- burada okulların yazılacak kısmı gelecek-->
+
+
+
+                            <BR />
+                            <h5> Yetenekler</h5>
+                            <div class="form-satir">
+                                <label for="YtkAciklama">Açıklama: </label>
+                                <textarea class="txtareastyle" id="YtkAciklama" name="YtkAciklama" rows="4" cols="24"></textarea>
+
+                            </div>
+
+
+                            <div class="form-satir">
+                                <label for="YtkSayisi">Yetenek Sayısı: </label>
+                                <select id="YtkSayisi">
+                                    <option value="">Seçiniz</option>
+                                    <option value="Ytk1">1</option>
+                                    <option value="Ytk2">2</option>
+                                    <option value="Ytk3">3</option>
+                                </select>
+                            </div>
+
+                            <!-- burada yetenekler yazılacak kısmı gelecek-->
+
+                            <BR />
+                            <h5> Hakkımda</h5>
+                            <div class="form-satir">
+                                <label for="Hakkimda">Açıklama: </label>
+                                <textarea class="txtareastyle" ()"id="Hakkimda" rows="4" cols="24"></textarea>
+
+                            </div>
+
+
+                            <BR />
+                            <h5> İş Deneyimi</h5>
+                            <div class="form-satir">
+                                <label for="Deneyim">Açıklama: </label>
+                                <textarea class="txtareastyle" id="Deneyim"  rows="4" cols="24"></textarea>
+
+                            </div>
+
+                        </div>
+
+                        <!-- SA� k�s�m -->
+                        <div class="alt-sag-box ">
+                            <h2>Görünüs</h2>
+                            <hr />
+                            <BR />
+                            <h5> Renkler</h5>
+                            <div class="form-satir">
+                                <label for="ArkaRenk" style="width: 130px; margin-right: 43px;">Arkaplan Rengi: </label>
+                                <input type="color" id="ArkaRenk" name="ArkaRenk" style="width:80px ;padding:0px;" />
+                                <br />
+                            </div>
+                            <div class="form-satir">
+
+                                <label for="SkRenk" style="width: 130px; margin-right: 43px;">Sol Kolon Rengi: </label>
+                                <input type="color" id="SkRenk" name="SkRenk" style="width:80px ;padding:0px;" />
+                                <br />
+                            </div>
+                            <div class="form-satir">
+                                <label for="İsmKRnk" style="width: 140px; margin-right: 33px;">İsim Kutusu Rengi: </label>
+                                <input type="color" id="İsmKRnk" name="İsmKRnk" style="width:80px ;padding:0px;" />
+                            </div>
+                            <div class="form-satir">
+                                <label for="İsmKYaziRnk" style="width:175px">İsim Kutusu Yazı Rengi: </label>
+                                <input type="color" id="İsmKYaziRnk" name="İsmKYaziRnk" style="width:80px ;padding:0px;" />
+                            </div>
+
+                            <BR />
+                            <h5> Yazı Tipi</h5>
+                            <div class="form-satir">
+                                <label for="YaziTipi" style="width: 140px;">Yazı Tipi: </label>
+                                <select id="YaziTipi">
+                                    <option value="">Seçiniz</option>
+
+                                </select>
+                            </div>
+
+                            <h5> Fotoğraf</h5>
+                            <div class="form-satir">
+                                <label for="Fotoğraf" style="width: 140px;">Fotoğraf: </label>
+                                <select id="Fotoğraf">
+                                    <option value="">Seçiniz</option>
+
+                                </select>
+                            </div>
+
+                            <h5> Başlık Altı Çizgileri</h5>
+                            <div class="form-satir">
+                                <label for="CizgiRengi" style="width: 140px;">Çizgi Rengi: </label>
+                                <input type="color" id="CizgiRengi" name="CizgiRengi" style="width:80px ;padding:0px;" />
+                                <br />
+                            </div>
+                            <div class="form-satir">
+                                <label for="CizgiSekli" style="width: 140px;">Çizgi Şekli: </label>
+                                <select id="CizgiSekli">
+                                    <option value="">Seçiniz</option>
+
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- SA� KUTU -->
+                <div class="right-box">
+                    <div class="bottom-wrapper">
+
+                        <!-- SOL k�s�m -->
+                        <div class="alt-sol-box">
+
+                            <div class="foto-div ">
+                                <div class="foto-daire">FOTOĞRAF</div>
+                            </div>
+                            <br />
+                            <br />
+                        
+
+                            <div class="iletisim-kutu">
+                                <h3>İLETİŞİM</h3>
+
+                                <ul>
+                                    <li id="telefon">{ Telefon }</li>
+                                    <li id="Mail">{ Mail }</li>
+                                    <li id="Adress">{ Adres }</li>
+                                    <li id="Web">{ Web }</li>
+                                </ul>
+                            </div>
+
+                            <br />
+                            <br />
+                     
+
+                            <div class="iletisim-kutu" style="height:243px;">
+                                <h3>EĞİTİM</h3>
+                                <h5  >{ AÇIKLAMA }</h5>
+                            </div>
+                        
+
+                            <div class="iletisim-kutu" style="height:298px;">
+                                <h3>YETENEKLER</h3>
+                                <h5 style=" ">{ AÇIKLAMA }</h5>
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- SA� k�s�m -->
+                        <div class="alt-sag-box" >
+
+                            <div  >
+
+                                <div class="adkutu">
+                                    <div class="isim" id="KarakterAd">{ <span>AD SOYAD</span> }</div>
+                                    <div class="unvan" id="KarakterUnvn">{  UNVAN }</div>
+                                </div>
+                                <br />
+                                <br />
+                                <br />
+                     
+
+
+                                <div class="iletisim-kutu" style="height: 263px; padding: 0 12px">
+                                    <h3>HAKKIMDA</h3>
+                                    <h5  id="Hakkında">{ AÇIKLAMA }</h5>
+                                </div>
+                                <div class="iletisim-kutu" style="height: 263px; padding: 0 12px">
+                                    <h3>İŞ DENEYİMİ</h3>
+                                    <h5 style=" ">{ AÇIKLAMA }</h5>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

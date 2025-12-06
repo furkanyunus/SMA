@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="menu-style.css">
+</head>
+<style>
+    /* Logo alanı: yatay hizalama ve öğeler arası boşluk */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        /* Logo içindeki küçük kare: arkaplan rengi ve köşe yuvarlama */
+        .logo .markası {
+            width: 40px;
+            height: 40px;
+            background: #2b6cb0;
+            border-radius: 8px;
+        }
+
+        /* Logo başlığı (şirket adı) için siyah renk */
+        .logo strong {
+            color: #000;
+        }
+</style>
+<body class="arkaplan">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="markası" aria-hidden="true"></div>
+                <div><strong>WEB DÜNYASIs</strong></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="egitim.html">Eğitim</a></li>
+                    <li><a href="yetenekler.html">Yetenekler</a></li>
+                    <li><a href="proje.html">Projeler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="contact-section">
+            <h2>İletişim Formu</h2>
+
+            <form action="#" method="POST" class="contact-form">
+
+                <!-- Ad Soyad -->
+                <div class="form-group">
+                    <label for="name">Ad Soyad</label>
+                    <input type="text" id="name" name="name" required placeholder="Adınızı ve soyadınızı yazın">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required placeholder="E-postanızı yazın">
+                </div>
+
+                <!-- Konu -->
+                <div class="form-group">
+                    <label for="subject">Konu</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Mesaj konusu">
+                </div>
+                <!-- Telefon -->
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="05xx xxx xx xx">
+                </div>
+
+
+
+                <!-- Mesaj -->
+                <div class="form-group">
+                    <label for="message">Mesajınız</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Mesajınızı buraya yazın"></textarea>
+                </div>
+
+                <!-- Gönder Butonu -->
+                <button type="submit" class="btn-submit">Gönder</button>
+
+            </form>
+        </section>
+
+
+
+
+
+
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <!-- Sol kısım: İsim -->
+                <div style="padding:10px; font-weight:500;">
+                    <p>© 2025 Furkan Yunus Tangut</p>
+                </div>
+
+                <!-- Sağ kısım: Linkler -->
+                <div class="footer-right">
+                    <a href="https://github.com/KENDI_GITHUB_LINKIN" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/KENDI_LINKEDIN_LINKIN" target="_blank" style="color:black;">LinkedIn</a>
+                </div>
+
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>

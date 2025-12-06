@@ -1,0 +1,132 @@
+﻿ <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Benim Web Sitem</title>
+    <link rel="stylesheet" href="menu-style.css">
+
+</head>
+<style>
+    /* Logo alanı: yatay hizalama ve öğeler arası boşluk */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        /* Logo içindeki küçük kare: arkaplan rengi ve köşe yuvarlama */
+        .logo .markası {
+            width: 40px;
+            height: 40px;
+            background: #2b6cb0;
+            border-radius: 8px;
+        }
+
+        /* Logo başlığı (şirket adı) için siyah renk */
+        .logo strong {
+            color: #000;
+        }
+    }
+</style>
+
+<body class="arkaplan">
+
+    <div class="container">
+        <header>
+            <!-- Logo alanı -->
+            <div class="logo">
+                <div class="markası"></div>
+                <div>
+                    <strong>WEB DÜNYASI</strong>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="egitim.html">Eğitim</a></li>
+                    <li><a href="yetenekler.html">Yetenekler</a></li>
+                    <li><a href="proje.html">Projeler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section class="hero">
+            <div class="lead">
+                <h1>Web Geliştirmenin Derinlikleri </h1>
+                <!-- Yana kaydırmalı galeri: üç resim -->
+
+                <img src="https://picsum.photos/id/679/750/350" alt="Resim 1">
+
+                <p style="max-width: 790px; margin: 18px auto; color:black; ">
+                    Web geliştirmede en kritik üç katman:
+                    <strong style="color: #2b6cb0">HTML</strong>(yapı ve semantik),
+                    <strong style="color: #2b6cb0">CSS</strong> (görünüm ve düzen) ve
+                    <strong style="color: #2b6cb0">JavaScript</strong>
+                    (etkileşim ve dinamik davranış). Bu sayfa bu üç alana odaklanarak temiz yapı, responsive stil
+                    ve temel etkileşim örnekleri sunar.
+                </p>
+                <ul style="list-style: none; color:black;">
+                    <li><strong style="color: #2b6cb0">HTML</strong>: Semantik etiketlerle erişilebilir içerik oluşturun.</li>
+                    <li><strong style="color: #2b6cb0">CSS</strong>: Responsive düzen ve görsel tutarlılık sağlayın.</li>
+                    <li><strong style="color: #2b6cb0">JavaScript</strong>: Kullanıcı etkileşimlerini ve dinamik içerikleri yönetin.</li>
+                </ul>
+
+            </div>
+            <div></div>
+
+        </section>
+
+        <section class="Category">
+
+            <div class="CategrySutunBack">
+                <img src="https://picsum.photos/id/675/750/350" alt="Resim 1">
+                <h3><strong>HTML</strong></h3>
+                <p style="color: black;">web sayfalarının iskeletini oluşturan yapısal işaretleme dilidir. Sayfa içeriğini semantik olarak düzenleyerek tarayıcıların metinleri, görselleri ve bölümleri doğru şekilde yorumlamasını sağlar.</p>
+
+            </div>
+
+            <div class="CategrySutunBack">
+                <img src="https://picsum.photos/id/676/750/350" alt="Resim 1">
+                <h3><strong>CSS</strong></h3>
+                <p style="color: black;">web sayfalarının görünümünü ve tasarımını belirleyen stil dilidir. Renkler, yazı tipleri, boşluklar, düzenler ve responsive yapılar gibi görsel özellikleri kontrol ederek kullanıcı deneyimini geliştirir.</p>
+
+            </div>
+            <div class="CategrySutunBack">
+                <img src="https://picsum.photos/id/677/750/350" alt="Resim 1">
+                <h3><strong>JavaScript</strong></h3>
+                <p style="color: black;">web sayfalarına etkileşim ve dinamik davranış kazandıran programlama dilidir. Form doğrulama, animasyonlar, API bağlantıları, buton tepkileri ve gerçek zamanlı güncellemeler gibi işlevleri gerçekleştirir</p>
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <!-- Sol kısım: İsim -->
+                <div style="padding:10px; font-weight:500;">
+                    <p>© 2025 Furkan Yunus Tangut</p>
+                </div>
+
+                <!-- Sağ kısım: Linkler -->
+                <div class="footer-right">
+                    <a href="https://github.com/KENDI_GITHUB_LINKIN" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/KENDI_LINKEDIN_LINKIN" target="_blank" style="color:black;">LinkedIn</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

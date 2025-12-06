@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Proje</title>
+    <link rel="stylesheet" href="menu-style.css">
+</head>
+<style>
+    /* Logo alanı: yatay hizalama ve öğeler arası boşluk */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        /* Logo içindeki küçük kare: arkaplan rengi ve köşe yuvarlama */
+        .logo .markası {
+            width: 40px;
+            height: 40px;
+            background: #2b6cb0;
+            border-radius: 8px;
+        }
+
+        /* Logo başlığı (şirket adı) için siyah renk */
+        .logo strong {
+            color: #000;
+        }
+</style>
+<body class="arkaplan">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="markası" aria-hidden="true"></div>
+                <div><strong>WEB DÜNYASI</strong></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="egitim.html">Eğitim</a></li>
+                    <li><a href="yetenekler.html">Yetenekler</a></li>
+                    <li><a href="proje.html">Projeler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+
+
+        <section id="projeler" class="list-section"  style="background: #ffffff; padding:3px;margin:0 40px; ">
+            <h2>Projeler</h2>
+            <p>HTML, CSS ve JavaScript kullanarak geliştirdiğim örnek web projeleri.</p>
+
+          
+
+            <div class="projects-grid">
+
+                <div class="list-karti ">
+                    <h3>Kişisel Portfolyo Sitesi</h3>
+                    <div class="tech">HTML • CSS • JavaScript</div>
+                    <p>Kendimi ve yeteneklerimi tanıttığım, responsive yapıda bir kişisel portfolyo sayfası.</p>
+                </div>
+
+                <div class="list-karti ">
+                    <h3>Blog Şablonu</h3>
+                    <div class="tech">HTML • CSS</div>
+                    <p>Başlık, içerik ve kategori yapısına sahip, sade ve okunabilir blog sayfası tasarımı.</p>
+                </div>
+
+                <div class="list-karti ">
+                    <h3>İletişim Formu Sayfası</h3>
+                    <div class="tech">HTML • CSS • Temel JS</div>
+                    <p>Ad, e-posta, telefon ve mesaj alanlarına sahip, doğrulama mantığı bulunan bir form sayfası.</p>
+                </div>
+
+                <div class="list-karti ">
+                    <h3>Mini Eğitim Sitesi</h3>
+                    <div class="tech">HTML • CSS • JavaScript</div>
+                    <p>HTML / CSS / JS konularını özetleyen bölümler ve tablolar içeren, çok sayfalı küçük bir eğitim sitesi.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <!-- Sol kısım: İsim -->
+                <div style="padding:10px; font-weight:500;">
+                    <p>© 2025 Furkan Yunus Tangut</p>
+                </div>
+
+                <!-- Sağ kısım: Linkler -->
+                <div class="footer-right">
+                    <a href="https://github.com/KENDI_GITHUB_LINKIN" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/KENDI_LINKEDIN_LINKIN" target="_blank" style="color:black;">LinkedIn</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

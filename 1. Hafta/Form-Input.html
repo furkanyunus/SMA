@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form-Input</title>
+</head>
+<body>
+
+    <h1>FORM ELEMENTÝ</h1>
+
+    <!--<form action="/" method="post">
+
+    </form>-->
+
+    <p>Form elementi, kullanýcýdan alýnan verileri sunucuya göndermek için kullanýlýr.</p>
+
+    <p>action attribute'u kullanýcýdan alýnan verilerin gönderileceði sunucu adresinin ifade edildiði kýsýmdýr.</p>
+
+    <p>method attribute'u kullýcýdan alýnanan verilerin hangi http method'u kullanýlarak gönderileceðini ifade eden kýsýmdýr.</p>
+
+    <h1>Input Elementleri</h1>
+
+
+    <h2>Kullanýcý Kayýt Formu</h2>
+
+    <!--TEXT-->
+
+    <label for="isim">Ad:</label>
+    <input type="text" id="isim" name="isim" />
+    <br />
+    <br />
+    <label for="soyisim">Soyad:</label>
+    <input type="text" id="soyisim" name="soyisim" />
+
+    <br />
+    <br />
+
+    <!--EMAIL-->
+    <label for="usermail">E-Mail:</label>
+    <input type="email" id="usermail" name="usermail" />
+
+    <br />
+    <br />
+
+
+    <!--PASSWORD-->
+    <label for="pwd">Parola:</label>
+    <input type="password" id="pwd" name="pwd" />
+
+    <br />
+    <br />
+
+    <!--NUMBER-->
+    <label for="age">Yaþýnýz:</label>
+    <input type="number" id="age" name="age" />
+
+    <br />
+    <br />
+
+    <!--TEL-->
+    <label for="phone">Telefon:</label>
+    <input type="tel" id="phone" name="phone" />
+
+    <hr />
+
+    <!--RADIO-->
+
+    <input type="radio" id="html" name="fav_lang" value="HTML" />
+    <label for="html">HTML</label>
+    <br />
+    <input type="radio" id="css" name="fav_lang" value="CSS" />
+    <label for="css">CSS</label>
+    <br />
+    <input type="radio" id="javascript" name="fav_lang" value="JavaScript" />
+    <label for="javascript">JavaScript</label>
+    <br />
+
+    <hr />
+
+
+    <!--CHECKBOX-->
+
+    <p>Sahip olduðunuz araçlarý seçiniz;</p>
+
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+    <label for="vehicle1">Bisiklet</label>
+    <br />
+
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+    <label for="vehicle2">Araba</label>
+    <br />
+
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Plane" />
+    <label for="vehicle3">Uçak</label>
+    <br />
+
+
+    <hr />
+
+
+    <!--COLOR-->
+    <label for="favcolor">Favori renginizi seçiniz;</label>
+    <input type="color" id="favcolor" name="favcolor" />
+
+
+    <hr />
+
+    <!--DATE TIME-->
+
+    <h3>Tarih ile ilgili input'lar</h3>
+
+    <h5>Tarih Seçimi</h5>
+
+    <label for="birthday">Doðum günü:</label>
+    <input type="date" id="birthday" name="birthday" />
+
+
+    <h5>Ay Seçimi</h5>
+
+    <label for="season">Sezon baþlangýcý:</label>
+    <input type="month" id="season" name="season" />
+
+
+    <h5>Saat Seçimi</h5>
+
+    <label for="hour">Ders Baþngýç Saati:</label>
+    <input type="time" id="hour" name="hour" />
+
+
+
+    <hr />
+
+    <h5>Range input'u</h5>
+
+    <label for="vol">Ses Seviyesi:</label>
+    <input type="range" id="vol" name="vol" min="0" max="50" />
+
+    <br />
+
+    <label for="difficulty">Zorluk Seviyesi:</label>
+    <input type="range" id="difficulty" name="difficulty" min="0" max="100" step="25" />
+
+
+
+
+    <hr />
+
+    <h5>Form Gönderme Ýþlemi</h5>
+
+
+    <form action="" method="post">
+
+        <!--TEXT-->
+
+        <label for="isim">Ad:</label>
+        <input type="text" id="isim" name="isim" />
+        <br />
+        <br />
+        <label for="soyisim">Soyad:</label>
+        <input type="text" id="soyisim" name="soyisim" />
+
+        <br />
+        <br />
+
+        <!--EMAIL-->
+        <label for="usermail">E-Mail:</label>
+        <input type="email" id="usermail" name="usermail" />
+
+        <br />
+        <br />
+
+
+        <!--PASSWORD-->
+        <label for="pwd">Parola:</label>
+        <input type="password" id="pwd" name="pwd" />
+
+        <br />
+        <br />
+
+        <!--NUMBER-->
+        <label for="age">Yaþýnýz:</label>
+        <input type="number" id="age" name="age" />
+
+        <br />
+        <br />
+
+        <!--TEL-->
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" />
+
+
+        <br />
+        <br />
+
+        <label for="cinsiyet">Cinsiyet:</label>
+
+        <select id="cinsiyet">
+            <option value="">Seçiminiz</option>
+            <option value="K">Kadýn</option>
+            <option value="E">Erkek</option>
+        </select>
+
+        <br />
+        <br />
+
+
+        <button type="submit" >Gönder</button>
+
+        <br />
+        <br />
+
+        <button type="reset">Sýfýrla</button>
+    </form>
+
+
+
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>
